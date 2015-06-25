@@ -9,6 +9,6 @@ end
 
 fizzbuzz = fn (n) -> fizz_or_buzz.(rem(n, 3), rem(n, 5), n) end
 
-sequence = [10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+sequence = 10..20
 
 Enum.each(sequence, fn (n) -> fizzbuzz.(n) |> IO.puts end)
